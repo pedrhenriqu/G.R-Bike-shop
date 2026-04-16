@@ -142,3 +142,18 @@
     color: var(--color-foreground);
   }
 }
+
+@keyframes pulse-cta {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 24px -4px rgba(245, 207, 47, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 12px 32px -4px rgba(245, 207, 47, 0.75);
+  }
+}
+
+.animate-pulse-cta {
+  animation: pulse-cta 1.6s ease-in-out infinite;
+}
