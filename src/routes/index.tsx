@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import grBikeLogo from "@/assets/gr-bike-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -25,15 +26,11 @@ function Index() {
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-10">
       <div className="w-full max-w-md flex flex-col items-center text-center gap-8">
         {/* Logo */}
-        <div className="flex flex-col items-center gap-2">
-          <div className="text-5xl" aria-hidden>🚴‍♂️</div>
-          <h2
-            className="text-3xl font-extrabold tracking-tight"
-            style={{ color: "#F5CF2F" }}
-          >
-            GR BIKE
-          </h2>
-        </div>
+        <img
+          src={grBikeLogo}
+          alt="GR Bike — Shop & Service"
+          className="w-40 h-40 sm:w-48 sm:h-48 object-contain"
+        />
 
         {/* Headline */}
         <h1 className="text-2xl sm:text-3xl font-bold leading-tight">
