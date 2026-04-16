@@ -29,7 +29,7 @@ function Index() {
         <img
           src={grBikeLogo}
           alt="GR Bike — Shop & Service"
-          className="w-40 h-40 sm:w-48 sm:h-48 object-contain"
+          className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-contain"
         />
 
         {/* Headline */}
